@@ -1,13 +1,13 @@
 <template>
     <div>
-        <h3 v-if="!editing">{{ todo.job }}</h3>
+        <h3 class="text-blue-600" v-if="!editing">{{ todo.job }}</h3>
         <input
             v-bind:value="todoText"
             v-on:change="todoTextChange"
             v-else
             type="text"
         />
-        <button v-on:click="updateTodoI(todo)">{{ editing ? 'update' : 'edit' }}</button>
+        <button class="bg-blue-600 text-white p-4 m-10" v-on:click="updateTodoI(todo)">{{ editing ? 'update' : 'edit' }}</button>
         <button v-on:click="deleteTodo(todo.id)">delete</button>
     </div>
 </template>

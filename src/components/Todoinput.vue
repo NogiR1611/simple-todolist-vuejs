@@ -1,6 +1,7 @@
 <template>
     <div>
         <input
+            class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest"
             v-on:change="todoTextChange"
             v-bind:value="todoText"
             type="text"
